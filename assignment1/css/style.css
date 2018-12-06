@@ -2,12 +2,19 @@ body {
 	background-color: black;
 	color: green;
 }
-h1 {
-	font-family: italic;
-/*	color: green;*/
+.parallax_green {
+	font-size: 75px;
+	background-color: green;
+	color: black;
+	padding: 200px;
+}
+.parallax_black {
+	background-color: black;
+	color: green;
+	font-size: 25px;
 }
 h2 {
-	font: italic;
+	font-family: "Times New Roman";
 }
 div {
 	padding: 15px;
@@ -17,9 +24,9 @@ dd {
 	padding: 5px;
 }
 blockquote {
-	border: 1px solid white;
+	border: 1px solid black;
 	text-align: center;
 	margin: 15px;
 	padding: 15px;
-	font-family: italic;
+	font-family: "Aladin";
 }
