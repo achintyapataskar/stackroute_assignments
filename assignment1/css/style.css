@@ -2,40 +2,34 @@ body {
 	background-color: black;
 	color: green;
 }
-.parallax_green {
+.parallax-green {
+	background-color: green;
+	color: black;
 	font-size: 75px;
-	background-color: green;
-	color: black;
 	padding: 200px;
 }
-.parallax_black {
+.parallax-black {
 	background-color: black;
 	color: green;
 	font-size: 25px;
 }
-.list_item {
+.list-item {
 	font-size: 25px;
 }
-#software_engineer_list_item {
-	padding: 200px;
+#software-engineer-list-item {
 	background-color: black;
 	color: green;
-	a {
-		color: green;
-	}
-}
-#voice_over_actor_list_item {
 	padding: 200px;
+}
+#voice-over-actor-list-item {
 	background-color: green;
 	color: black;
-	a {
-		color: darkgreen;
-	}
-}
-#ngo_list_item {
 	padding: 200px;
+}
+#ngo-list-item {
 	background-color: black;
 	color: green;
+	padding: 200px;
 }
 h2 {
 	font-family: "Times New Roman";
@@ -44,13 +38,13 @@ div {
 	padding: 15px;
 }
 dd {
-	text-align: center;
 	padding: 5px;
+	text-align: center;
 }
 blockquote {
 	border: 1px solid black;
-	text-align: center;
+	font-family: "Aladin";
 	margin: 15px;
 	padding: 15px;
-	font-family: "Aladin";
+	text-align: center;
 }
