@@ -18,15 +18,25 @@ header {
 	background-color: black;
 	border: 1px solid black;
 	color: green;
+	display: flex;
+	flex: 1 1 auto;
 	font-size: 2vw;
 	padding: 10px;
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
+#my-logo {
+	height: 5%;
+	width: 5%;
+}
 /*Color green for all links, in accordance with theme of the site.*/
 a {
 	color: green;
+}
+.nav-list-item {
+	padding-left: 6%;
+	padding-right: 6%;
 }
 /*Hero element of the site.*/
 #main-heading {
