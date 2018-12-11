@@ -133,6 +133,11 @@ a {
 	color: green;
 	font-size: 2vw;
 }
+/*Logos used in skills columns*/
+.skills-logos {
+	height: 20%;
+	width: 20%;
+}
 /*Content for a column element*/
 .skills-child-body {
 	color: green;
