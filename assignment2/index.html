@@ -3,11 +3,15 @@
 	<head>
 		<title>Achintya Pataskar</title>
 		<meta charset = "utf-8">
+		<!-- Making the website responsive. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Linking to the stylesheet. -->
 		<link type = "text/css" rel = "stylesheet" href = "style/style.css">
+		<!-- Linking to font awesome. -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	</head>
 	<body>
+		<!--Fixed Navigation Bar. -->
 		<nav id = "main-navigation-bar">
 			<a href = "#education">Education</a>
 			<a href = "#training">Training</a>
@@ -15,6 +19,7 @@
 			<a href = "#projects">Projects</a>
 		</nav>
 
+		<!-- Hero element -->
 		<header id = "main-heading">
 				<h1>Hi, I am Achintya</h1>
 			<section class = "main-heading-content">
@@ -24,6 +29,15 @@
 		</header>
 
 
+		<!-- 3 column element -->
+		<!-- 
+				education
+				|
+				-education-child
+				||
+				|-big-edu-name
+				|-big-marks
+				-->
 		<section id = "education">
 			<section class = "education-child">
 				<p class = "big-edu-name">10 th</p>
@@ -47,6 +61,14 @@
 		</section>
 
 
+		<!-- Parent training container follows a different flex alignment than its children -->
+		<!-- training
+				 |
+				 |-training-intro
+				 |-training-children(has a flex row alignment)
+				 | |-training-child-header
+				 | |-training-child-body
+		 -->
 		<section id = "training">
 			<section class = "training-intro">
 				<header>
@@ -85,6 +107,7 @@
 		</section>
 		</section>
 
+		<!-- Three column element similar to training.-->
 		<section id = "skills">
 			<header class = "skills-intro">
 				<h1>Skills I possess...</h1>
@@ -114,6 +137,7 @@
 			</section>
 		</section>
 
+		<!-- Projects follows a flex column alignment, each of its elements is a flex container. -->
 		<section id = "projects">
 			<header class = "projects-heading">
 				<h3>My Projects</h3>
@@ -144,8 +168,11 @@
 			</section>
 		</section>
 
+		<!-- Footer is not a flex container, but its child footer-list is a flex container. -->
 		<footer>
 				<h1 class = "footer-intro">Contact Me</h1>
+				<!-- this list follows row alignment and helps make the page responsive. -->
+				<!-- A footer-list-item uses icons retrieved from font awesome instead of text to take the user to contact information.-->
 				<ul class = "footer-list">
 					<li class = "footer-list-item"><a href = "https://facebook.com/achintyapataskar.79/" class = "footer-child"><i class="fab fa-facebook-square"></i></a></li>
 					<li class = "footer-list-item"><a href = "https://linkedin.com/" class = "footer-child"><i class = "fab fa-linkedin"></i></a></li>
