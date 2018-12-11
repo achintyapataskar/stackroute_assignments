@@ -1,5 +1,5 @@
+/*A parallax effect is implemented across the entire page, in accordance with the theme of the site.*/
 body {
-/*	font-size: "5vw";*/
 	background-image: url("/images/matrix-background.jpg");
 	height:	100%;
 	background-attachment:	fixed;
@@ -12,11 +12,159 @@ header {
 	text-align: center;
 	top: 0;
 }
-footer {
-/*	display: flex;
-	flex-direction: row;
+/*Fixed Navigation Bar*/
+#main-navigation-bar {
+	text-align: center;
+	background-color: black;
+	border: 1px solid black;
+	color: green;
+	font-size: 2vw;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+/*Color green for all links, in accordance with theme of the site.*/
+a {
+	color: green;
+}
+/*Hero element of the site.*/
+#main-heading {
+	align-items: center;
+	background-color:	rgba(0, 0, 0, .85);
+	color: green;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5vw;
+	justify-content: center;
+	margin: 2%;
+	height: 100vh;
+	width: 100vw;
+}
+.main-heading-content {
+	background-color:	rgba(0, 0, 0, .85);
+	color:	green;
+	margin: 2%;
+}
+/*flex box to put content in 3 columns*/
+#education {
+	display: flex;
 	flex: 1 1 auto;
-	flex-wrap: wrap;*/
+	margin: 2%;
+}
+/*Controls the text content of each column in education*/
+.education-child {
+	background-color: rgba(0, 0, 0, .85);
+	color: green;
+	font-size: 1.25vw;
+	padding: 2%;
+	text-align: center;
+}
+/*Have the name of educational milestone in CAPITAL.*/
+.big-edu-name {
+	font-size: 5vw;
+	text-align: center;
+}
+/*Have marks printed in HUGE BOLD. */
+.big-marks {
+	font-size: 6vw;
+	text-align: center;
+}
+
+
+/*The parent uses column flex alignment. The children are stored in a separate container that follows row alignment.*/
+#training {
+	background-color: rgba(0, 0, 0, .85);
+	color: green;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	margin: 2%;
+	width: 100vw;
+}
+/*Single heading for 4 columns in training*/
+.training-intro {
+	font-size: 3vw;
+	text-align: left;
+}
+/*A separate section within training that uses flex row alignment*/
+.training-children {
+	display: flex;
+	flex-direction: row;
+}
+/*An individual element that makes up a column*/
+.training-child {
+	border-radius: 25px;
+	padding: 1%;
+}
+/*Title for each column*/
+.training-child-header {
+	font-size: 2.5vw;
+	text-align: left;
+}
+/*Content for each column*/
+.training-child-body {
+	font-size: 1.5vw;
+}
+
+/*This is the parent container for skills. It follows a column flex alignment. It contains a child container that follows a separate row flex alignment.*/
+#skills {
+	background-color: rgba(0, 0, 0, .85);
+	color: green;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	height: 60vh;
+	margin: 2%;
+	width: 100vw;
+}
+/*Child container that follows a row flex alignment*/
+.skills-children {
+	display: flex;
+	flex-direction:row;
+}
+/*An individual column element*/
+.skills-child {
+	color: green;
+	padding: 1%;
+}
+/*Heading for a column element*/
+.skills-child-header {
+	color: green;
+	font-size: 2vw;
+}
+/*Content for a column element*/
+.skills-child-body {
+	color: green;
+	font-size: 1.25vw;
+	text-align: center;
+}
+
+/*List of all projects in one column*/
+#projects {
+	border: 1px solid green;
+	background-color: rgba(0, 0, 0, .85);
+	color: green;
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+	padding: 2%;
+}
+/*Individual element of a column. Each of which is a flex box. Also controls the content of each individual element in the column.*/
+.projects-child {
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+/*heading of each element in the list*.*/
+.projects-heading {
+	font-size: 2vw;
+	text-align: center;
+}
+
+/*links to all my contact info.*/
+footer {
 	background-color: rgba(0, 0, 0, .85);
 }
 .footer-intro {
@@ -36,136 +184,4 @@ footer {
 	font-size: 4vw;
 	padding-left: 10%;
 	padding-right: 10%;
-}
-#main-navigation-bar {
-	text-align: center;
-	background-color: black;
-	border: 1px solid black;
-	color: green;
-	font-size: 2vw;
-	padding: 10px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-a {
-	color: green;
-}
-#main-heading {
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0);
-	color: green;
-	display: flex;
-	flex-direction: column;
-	font-size: 1.5vw;
-	justify-content: center;
-	height: 100vh;
-	width: 100vw;
-}
-.main-heading-content {
-	background-color:	rgba(0, 0, 0, .85);
-	color:	green;
-	padding-left: 37.5%;
-	padding-right: 37.5%;
-}
-#education {
-	display: flex;
-	flex: 1 1 auto;
-	margin: 1%;
-}
-.education-child {
-	/*border: 1px solid black;
-	background-color: rgb(211, 211, 211);*/
-	background-color: rgba(0, 0, 0, .85);
-	color: green;
-	font-size: 1.25vw;
-	padding: 2%;
-	text-align: center;
-}
-.big-edu-name {
-	/*Have the name of educational milestone in CAPITAL.*/
-	font-size: 5vw;
-	text-align: center;
-}
-.big-marks {
-	/*Have marks printed in HUGE BOLD. */
-	font-size: 6vw;
-	text-align: center;
-}
-
-
-
-#training {
-	background-color: rgba(0, 0, 0, .85);
-	color: green;
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	/*height: 100vh;*/
-	margin: 1%;
-	width: 100vw;
-}
-.training-intro {
-	text-align: left;
-}
-.training-children {
-	display: flex;
-	flex-direction: row;
-}
-.training-child {
-	border-radius: 25px;
-	padding: 1%;
-}
-.training-child-header {
-	font-size: 2.5vw;
-	text-align: left;
-}
-.training-child-body {
-	font-size: 1.5vw;
-}
-
-
-#skills {
-	background-color: rgba(0, 0, 0, .85);
-	color: green;
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	height: 60vh;
-	margin: 1%;
-	width: 100vw;
-}
-.skills-child-header {
-	color: green;
-	font-size: 2vw;
-}
-.skills-child {
-	color: green;
-	padding: 1%;
-}
-.skills-child-body {
-	color: green;
-	font-size: 1.25vw;
-	text-align: center;
-}
-.skills-children {
-	display: flex;
-	flex-direction:row;
-}
-#projects {
-	border: 1px solid green;
-	background-color: rgba(0, 0, 0, .85);
-	color: green;
-	display: flex;
-	flex-direction: column;
-	margin: 1%;
-	padding: 2%;
-}
-.projects-child {
-	border: 1px solid green;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	margin: 2%;
-	width: 100vw;
 }
