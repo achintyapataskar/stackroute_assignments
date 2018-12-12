@@ -8,6 +8,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: green;
+	font-family: "Courier New";
 }
 #master-container {
 	background-color: rgba(0, 0, 0, 0.85);
@@ -21,24 +22,24 @@ body {
 	color: green;
 }
 .hero-element {
-	height: 100vh;
+	height: 85vh;
 	padding: 6.25%;
 	text-align: center;
 	width: 100vw;
 }
-.hero-element-padding {
-	padding: 5%;
+.hero-element-title {
+	font-size: 5vw;
+	padding-top: 2%;
 }
 .hero-element-intro {
 	padding: 4%;
+	font-size: 3vw;
 	text-align: center;
-}
-#main-heading {
-	font-size: 
 }
 
 #education {
 /*	height: 100vh;*/
+	background-color: rgba(0, 0, 0, 0.85);
 	padding: 6.25%;
 	text-align: center;
 	width: 100vw;
@@ -58,6 +59,7 @@ body {
 
 #training {
 /*	height: 100vh;*/
+	background-color: rgba(0, 0, 0, 0.85);
 	padding: 6.25%;
 	text-align: center;
 	width: 100vw;
@@ -72,8 +74,9 @@ body {
 	font-size: 1.5vw;
 }
 
-.projects {
+#projects {
 /*	height: 100vh;*/
+	background-color: rgba(0, 0, 0, 0.85);
 	padding: 6.25%;
 	text-align: center;
 	width: 100vw;
