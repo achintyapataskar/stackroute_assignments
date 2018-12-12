@@ -37,11 +37,11 @@ body {
 	font-size: 
 }
 
-.education {
-	height: 100vh;
+#education {
+/*	height: 100vh;*/
 	padding: 6.25%;
 	text-align: center;
-/*	width: 100vw;*/
+	width: 100vw;
 }
 .education-title {
 	font-size: 5vw;
@@ -53,14 +53,14 @@ body {
 	font-size: 4vw;
 }
 .education-item-description {
-	font-size: 2vw;
+	font-size: 1.8vw;
 }
 
-.training {
-	height: 100vh;
+#training {
+/*	height: 100vh;*/
 	padding: 6.25%;
 	text-align: center;
-/*	width: 100vw;*/
+	width: 100vw;
 }
 .training-title {
 	font-size: 4.5vw;
