@@ -71,3 +71,16 @@ body {
 .training-description {
 	font-size: 1.5vw;
 }
+
+.projects {
+/*	height: 100vh;*/
+	padding: 6.25%;
+	text-align: center;
+	width: 100vw;
+}
+.project-item-title {
+	font-size: 4vw;
+}
+.project-item-description {
+	font-size: 2vw;
+}
