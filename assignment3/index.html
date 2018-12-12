@@ -14,13 +14,16 @@
 		<!-- Link the bootstrap file-->
 		<link type = "text/css" rel = "stylesheet" href = "/style/style.css">
 		<!-- Link my own CSS file -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+		<!-- Link to FontAwesome -->
+		<link rel = "icon" href = "ap.png" type = "image/png">
 	</head>
 	<body>
 
 		<!-- This is the master container -->
 		<div class = "container-fluid" id = "master-container">
 		<!-- Fixed Navigation Bar -->
-			<nav class = "navbar navbar-expand-sm fixed-top" id = "main-navigation-bar">
+			<nav class = "navbar nav-tabs  navbar-expand-sm fixed-top" id = "main-navigation-bar">
 				<a href = "#education" class = "col nav-bar-list-item">Education</a>
 				<a href = "#training" class = "col nav-bar-list-item">Training</a>
 				<a href = "#skills" class = "col nav-bar-list-item">Skills</a>
@@ -90,6 +93,20 @@
 			<div class = "col" id = "training">
 				<div class = "row training-title">
 					<div class = "col">Trainings I have taken outside college.</div>
+				</div>
+				<div class = "row training-item-logo">
+					<div class = "col">
+						<i class = "fas fa-file-code"></i>
+					</div>
+					<div class = "col">
+						<i class = "fas fa-terminal"></i>
+					</div>
+					<div class = "col">
+						<i class = "fas fa-camera"></i>
+					</div>
+					<div class = "col">
+						<i class = "fas fa-microphone"></i>
+					</div>
 				</div>
 				<div class = "row training-item-title">
 					<div class = "col">
@@ -176,7 +193,41 @@
 						<p>Thoroughly tested and scalable</p>
 						<p>Created a user - friendly interface.</p>
 					</div>
+					<div class = "jumbotron">
+						<h1>W3C Nomination</h1>
+						<p>This project has been nominated to W3C standards for the year 2019.</p>
+					</div>
 				</div>
+
+				<div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+					<iframe src="www.maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class = "row footer">
+							<a href = "https://facebook.com/achintyapataskar.79/" class = "col footer-item"><i class="fab fa-facebook-square"></i></a>
+							<a href = "https://linkedin.com/" class = "col footer-item"><i class = "fab fa-linkedin"></i></a>
+							<a href = "http://github.com/achintyapataskar/" class = "col footer-item"><i class="fab fa-github-square"></i></a>
+				</div>
+
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/img_parallax7.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/img_parallax3.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/img_parallax4.jpg" alt="Third slide">
+                </div>
+			</div>
 
 		</div><!-- Master Container ends -->
 
