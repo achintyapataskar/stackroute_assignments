@@ -131,7 +131,7 @@ a {
 /*Child container that follows a row flex alignment*/
 .skills-children {
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 }
 /*An individual column element*/
 .skills-child {
@@ -199,4 +199,10 @@ footer {
 	font-size: 4vw;
 	padding-left: 10%;
 	padding-right: 10%;
+}
+@media only screeen and (max-width: 21600px) {
+	
+	.footer-list {
+		flex-direction: column;
+	}
 }
