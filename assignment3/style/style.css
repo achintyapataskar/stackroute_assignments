@@ -112,6 +112,9 @@ body {
 .project-item-description {
 	font-size: 2vw;
 }
+.glyphicon {
+	color:green;
+}
 
 #open-source-contri {
 	background-color: rgba(0, 0, 0, .85);
