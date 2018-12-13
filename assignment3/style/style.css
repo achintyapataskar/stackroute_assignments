@@ -21,6 +21,9 @@ body {
 .nav-bar-list-item {
 	color: green;
 }
+.dropdown-menu {
+	background-color: black;
+}
 .hero-element {
 	height: 85vh;
 	padding: 6.25%;
@@ -112,7 +115,7 @@ body {
 
 #open-source-contri {
 	background-color: rgba(0, 0, 0, .85);
-	padding: 7%;
+	padding: 17%;
 }
 .carousel-item {
 	text-align: center;
@@ -120,9 +123,17 @@ body {
 }
 .carousel-item-logo {
 	text-align: center;
-	font-size: 4vw;
+	font-size: 6vw;
 }
 
+.nomination-page {
+	background-color: rgba(0, 0, 0, .85);
+}
+.btn {
+	background-color: rgba(0, 0, 0, .85);
+	border-color: green;
+	color: green;
+}
 .footer {
 	background-color: rgba(0, 0, 0, .85);
 }
