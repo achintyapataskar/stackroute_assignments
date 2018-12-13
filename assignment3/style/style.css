@@ -1,5 +1,6 @@
 a {
 	font-size: 1.5vw;
+	color: green;
 }
 body {
 	background-attachment: fixed;
@@ -58,6 +59,9 @@ body {
 }
 .education-item-description {
 	font-size: 1.8vw;
+}
+.education-maps {
+	color: green;
 }
 
 #training {
