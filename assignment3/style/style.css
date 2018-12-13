@@ -110,9 +110,17 @@ body {
 	font-size: 2vw;
 }
 
+#open-source-contri {
+	background-color: rgba(0, 0, 0, .85);
+	padding: 7%;
+}
 .carousel-item {
-	font-size: 5vw;
-	padding: 5%;
+	text-align: center;
+	font-size: 2vw;
+}
+.carousel-item-logo {
+	text-align: center;
+	font-size: 4vw;
 }
 
 .footer {
