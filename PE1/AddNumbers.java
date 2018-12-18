@@ -1,13 +1,8 @@
 import java.io.*;
 import java.util.*;
 public class AddNumbers {
-    public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
-/*        int new_number = 0, sum = 0;
-        String input;
-        input = in.nextLine();
-        int length_of_input = input.length();
-
+    public static int sum(String input) {
+        int length_of_input = input.length(), sum = 0, new_number = 0;
         for(int i = 0; i <= length_of_input; i++) {
             if(i == length_of_input) {
                 sum += new_number;
@@ -27,23 +22,13 @@ public class AddNumbers {
             }
             new_number = new_number * 10 + Character.getNumericValue(input.charAt(i));
         }
-        System.out.println(sum);*/
-        int sum = 0;
-        while(in.hasNext()) {
-            String input = in.nextLine();
-            int flag = 0;
-            for(int i = 0; i < input.length(); i++)
-                if(input.charAt(i) != ' ' && input.charAt(i) > '9' || input.charAt(i) < '0') {
-                    flag = 1;
-                    break;
-                }
-            if(flag == 1) {
-                flag = 0;
-                System.out.println("Not a number");
-                continue;
-            }
-            sum += Integer.parseInt(input);
-            System.out.print(sum);
-        }
+        return sum;
+    }
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String input;
+        input = in.nextLine();
+
+        System.out.println(sum(input));
     }
 }
