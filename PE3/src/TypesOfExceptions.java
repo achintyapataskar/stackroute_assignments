@@ -1,3 +1,5 @@
+//Write a program that will generate exceptions of type NegativeArraySizeException, IndexOutOfBoundsException, NullPointerException. Record the catching of each exception by displaying the message stored in the exception object.
+
 import java.io.FileNotFoundException;
 
 public class TypesOfExceptions {
