@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -6,9 +7,13 @@ import java.util.Map;
 import static org.junit.Assert.*;
 
 public class StringArrayToMapTest {
+    private StringArrayToMap stm;
+    @Before
+    public void initObjectOfStringArrayToMap() {
+        stm = new StringArrayToMap();
+    }
     @Test
     public void emptyArrayCreateMap() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>();
         String[] input = new String[0];
         assertEquals(m, stm.createMap(input));
@@ -29,7 +34,6 @@ public class StringArrayToMapTest {
 
     @Test
     public void allDifferentArrayElements() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>() {
             {
                 put("The", false);
@@ -50,7 +54,6 @@ public class StringArrayToMapTest {
 
     @Test
     public void nonDifferentArrayElements() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>() {
             {
                 put("Aye", true);
@@ -77,7 +80,6 @@ public class StringArrayToMapTest {
 
     @Test
     public void mixDifferentNonDifferent() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>() {
             {
                 put("All", false);
@@ -97,7 +99,6 @@ public class StringArrayToMapTest {
 
     @Test
     public void multipleCasesForCharacters() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>() {
             {
                 put("All", false);
@@ -119,7 +120,6 @@ public class StringArrayToMapTest {
 
     @Test
     public void singleCharacters() {
-        StringArrayToMap stm = new StringArrayToMap();
         Map<String, Boolean> m = new HashMap<>() {
             {
                 put("A", false);
