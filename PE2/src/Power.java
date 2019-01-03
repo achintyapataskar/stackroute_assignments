@@ -11,7 +11,7 @@ public class Power {
         while(true) {
             BigInteger iterator = new BigInteger("1");
             BigInteger f = new BigInteger("1");
-            while(iterator.compareTo(power)) {
+            while(iterator.compareTo(power) < 0) {
                 f.multiply(number);
                 iterator.add(BigInteger.ONE);
             }
