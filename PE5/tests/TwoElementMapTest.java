@@ -26,6 +26,8 @@ public class TwoElementMapTest {
         Map<String, String> test_answer = new HashMap<>();
         TwoElementMap tem = new TwoElementMap();
         assertEquals(test_answer, tem.modifyMap(test_input));
+        System.out.println(test_input);
+        System.out.println(test_answer);
     }
 
     @Test

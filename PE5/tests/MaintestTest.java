@@ -20,6 +20,6 @@ public class MaintestTest {
         mt.initList();
         List<Student> manually_sorted_list = mt.initAnswerList();
         List<Student> test = mt.sortStudents();
-        assertEquals(manually_sorted_list, test);
+        assertEquals(manually_sorted_list.toString(), test.toString());
     }
 }

@@ -41,6 +41,7 @@ public class Maintest {
         s6.setName("Bohemian Rhapsody");
         s7.setName("Radio Ga Ga");
 
+        answerList.clear();
         answerList.add(s6);
         answerList.add(s5);
         answerList.add(s4);
